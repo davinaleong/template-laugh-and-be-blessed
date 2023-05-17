@@ -2,6 +2,8 @@
   display: flex;
   align-items: end;
   justify-content: space-between;
+  padding-left: var(--size-v-400);
+  padding-right: var(--size-v-400);
   margin-bottom: var(--size-v-400);
   border-bottom: thin solid var(--clr-primary-500);
 
