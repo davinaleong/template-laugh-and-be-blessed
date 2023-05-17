@@ -79,6 +79,8 @@ body,
 .main {
   container-name: main;
   container-type: inline-size;
+  padding-left: var(--size-v-400);
+  padding-right: var(--size-v-400);
 
   &-flex {
     display: flex;

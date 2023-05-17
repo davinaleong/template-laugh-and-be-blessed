@@ -54,15 +54,24 @@
   @each $tint-key, $tint-value in $value {
     @each $direction-key, $direction-value in $border-directions {
       @each $style-key, $style-value in $border-styles {
-
         @each $weight-key, $weight-value in $border-f-weights {
           @if ($direction-key == "all") {
             .border-f-#{$style-key}-#{$weight-key}-#{$key}-#{$tint-key} {
-              @include border($direction-key, $weight-value, $tint-value, $style-value);
+              @include border(
+                $direction-key,
+                $weight-value,
+                $tint-value,
+                $style-value
+              );
             }
           } @else {
             .border-f-#{$direction-value}-#{$style-key}-#{$weight-key}-#{$key}-#{$tint-key} {
-              @include border($direction-key, $weight-value, $tint-value, $style-value);
+              @include border(
+                $direction-key,
+                $weight-value,
+                $tint-value,
+                $style-value
+              );
             }
           }
         }
@@ -70,15 +79,24 @@
         @each $weight-key, $weight-value in $border-v-weights {
           @if ($direction-key == "all") {
             .border-v-#{$style-key}-#{$weight-key}-#{$key}-#{$tint-key} {
-              @include border($direction-key, $weight-value, $tint-value, $style-value);
+              @include border(
+                $direction-key,
+                $weight-value,
+                $tint-value,
+                $style-value
+              );
             }
           } @else {
             .border-v-#{$direction-value}-#{$style-key}-#{$weight-key}-#{$key}-#{$tint-key} {
-              @include border($direction-key, $weight-value, $tint-value, $style-value);
+              @include border(
+                $direction-key,
+                $weight-value,
+                $tint-value,
+                $style-value
+              );
             }
           }
         }
-
       }
     }
   }
@@ -232,7 +250,7 @@
 /// Helpers - Box Shadows
 @each $key, $value in $box-shadow-directions {
   @each $weight-key, $weight-value in $box-shadow-f-weights {
-    .shadow-f-#{$value}-f-#{$weight-key} {
+    .shadow-f-#{$value}-#{$weight-key} {
       @include box-shadow($value, $weight-value);
     }
   }
