@@ -2,163 +2,87 @@
 
 /// Palatte
 $palatte: (
-  "gray-50": (
-    "hex": #ffffff,
-    "hsl": hsl(0, 0%, 100%),
-  ),
-  "gray-900": (
-    "hex": #000000,
-    "hsl": hsl(0, 0%, 0%),
-  ),
   "gray-100": (
-    "hex": #f5f5f5,
-    "hsl": hsl(0, 0%, 96%),
+    "hex": #f2f2f2,
+    "rgb": rgb(242, 242, 242),
+    "hsl": hsl(0, 0%, 95%),
   ),
-  "gray-200": (
-    "hex": #eeeeee,
-    "hsl": hsl(0, 0%, 93%),
+  "gray-600": (
+    "hex": #707070,
+    "rgb": rgb(112, 112, 112),
+    "hsl": hsl(0, 0%, 44%),
   ),
-  "gray-300": (
-    "hex": #dddddd,
-    "hsl": hsl(0, 0%, 87%),
+  "gray-700": (
+    "hex": #404040,
+    "rgb": rgb(64, 64, 64),
+    "hsl": hsl(0, 0%, 25%),
   ),
-  "gray-400": (
-    "hex": #cccccc,
-    "hsl": hsl(0, 0%, 80%),
-  ),
-  "gray-500": (
-    "hex": #999999,
-    "hsl": hsl(0, 0%, 60%),
-  ),
-  "primary-200": (
-    "hex": #2188ff,
-    "hsl": hsl(212, 100%, 56%),
+  "primary-300": (
+    "hex": #d4f266,
+    "rgb": rgb(212, 242, 102),
+    "hsl": hsl(73, 84%, 67%),
   ),
   "primary-400": (
-    "hex": #005cc5,
-    "hsl": hsl(212, 100%, 39%),
-  ),
-  "success-50": (
-    "hex": #cbeed5,
-    "hsl": hsl(137, 51%, 86%),
-  ),
-  "success-200": (
-    "hex": #62e185,
-    "hsl": hsl(137, 68%, 63%),
-  ),
-  "success-400": (
-    "hex": #138934,
-    "hsl": hsl(137, 76%, 31%),
-  ),
-  "danger-200": (
-    "hex": #f9707b,
-    "hsl": hsl(355, 92%, 71%),
-  ),
-  "danger-400": (
-    "hex": #cb2431,
-    "hsl": hsl(355, 70%, 47%),
+    "hex": #a7bf4e,
+    "rgb": rgb(167, 191, 79),
+    "hsl": hsl(73, 47%, 53%),
   ),
 );
 
 /// Colors
 $colors: (
   "primary": (
-    "50": hsl(212, 100%, 99%),
-    "100": hsl(212, 100%, 96%),
-    "200": hsl(212, 100%, 93%),
-    "300": hsl(212, 100%, 88%),
-    "400": hsl(212, 100%, 74%),
-    "500": hsl(212, 100%, 56%),
-    // Primary Hover
-    "600": hsl(212, 100%, 46%),
-    "700": hsl(212, 100%, 39%),
+    "50": hsl(73, 88%, 99%),
+    "100": hsl(73, 86%, 96%),
+    "200": hsl(73, 86%, 93%),
+    "300": hsl(73, 84%, 88%),
+    // Primary Light
+    "400": hsl(73, 84%, 67%),
     // Primary
-    "800": hsl(212, 100%, 26%),
-    "900": hsl(212, 100%, 10%),
-  ),
-  "secondary": (
-    "50": hsl(46, 95%, 98%),
-    "100": hsl(46, 95%, 93%),
-    "200": hsl(46, 95%, 83%),
-    "300": hsl(46, 95%, 73%),
-    "400": hsl(46, 95%, 63%),
-    // Warning
-    "500": hsl(46, 95%, 53%),
-    "600": hsl(46, 95%, 43%),
-    "700": hsl(46, 95%, 33%),
-    "800": hsl(46, 95%, 23%),
-    "900": hsl(46, 95%, 13%),
+    "500": hsl(73, 47%, 53%),
+    "600": hsl(73, 47%, 46%),
+    "700": hsl(73, 45%, 39%),
+    "800": hsl(73, 45%, 26%),
+    "900": hsl(73, 43%, 10%),
   ),
   "gray": (
-    "50": hsl(0, 0%, 100%),
     // White
-    "100": hsl(0, 0%, 96%),
-    // Sidebar Background
+    "50": hsl(0, 0%, 100%),
+    // Text
+    "100": hsl(0, 0%, 95%),
     "200": hsl(0, 0%, 93%),
     "300": hsl(0, 0%, 87%),
-    // Answer Hover
     "400": hsl(0, 0%, 80%),
-    // Answer
     "500": hsl(0, 0%, 60%),
-    "600": hsl(0, 0%, 46%),
+    // Card Background
+    "600": hsl(0, 0%, 44%),
+    // Background
     "700": hsl(0, 0%, 38%),
     "800": hsl(0, 0%, 26%),
-    "900": hsl(0, 0%, 0%),
     // Black
-  ),
-  "danger": (
-    "50": hsl(355, 100%, 96%),
-    "100": hsl(355, 100%, 90%),
-    "200": hsl(355, 73%, 77%),
-    "300": hsl(355, 69%, 67%),
-    // Danger Hover
-    "400": hsl(355, 83%, 63%),
-    "500": hsl(355, 90%, 58%),
-    "600": hsl(355, 77%, 55%),
-    "700": hsl(355, 65%, 51%),
-    "800": hsl(355, 70%, 47%),
-    // Danger
-    "900": hsl(355, 73%, 41%),
-  ),
-  "success": (
-    "50": hsl(137, 39%, 94%),
-    "100": hsl(137, 38%, 84%),
-    // Success Background
-    "200": hsl(137, 37%, 74%),
-    "300": hsl(137, 38%, 64%),
-    // Success Hover
-    "400": hsl(137, 38%, 57%),
-    "500": hsl(137, 39%, 49%),
-    "600": hsl(137, 41%, 45%),
-    "700": hsl(137, 43%, 39%),
-    "800": hsl(137, 76%, 31%),
-    // Success
-    "900": hsl(137, 55%, 24%),
+    "900": hsl(0, 0%, 0%),
   ),
 );
 
 /// Fonts
 /// Fonts - Font Families
 $font-families: (
-  "primary": #{Inter,
+  "primary": #{"Nunito",
   Arial,
-  sans-serif},
-  "secondary": #{"Indie Flower",
-  "Comic Sans",
   sans-serif},
 );
 
 /// Fonts - Font Sizes
 $font-sizes: (
   "base": 16px,
-  "md": css-clamp("1rem, 1rem + 2vw, 1.25rem"),
+  // 14px / 16px
+  "sm": css-clamp("0.875rem, 1rem + 2vw, 1rem"),
   // 16px / 20px
-  "lg": css-clamp("1.5rem, 1rem + 2vw, 2.25rem"),
-  // 24px / 36px
-  "xl": css-clamp("2.5rem, 1rem + 2vw, 4rem"),
-  // 48px / 64px
-  "xxl": css-clamp("3.125rem, 1rem + 2.5vw, 5.875rem"),
-  // 48px / 64px
+  "md": css-clamp("1rem, 1rem + 2vw, 1.25rem"),
+  // 24px / 40px
+  "lg": css-clamp("1.5rem, 1rem + 2vw, 2.5rem"),
+  // 40px / 60px
+  "xl": css-clamp("2.5rem, 1rem + 3vw, 3.75rem"),
 );
 
 /// Fonts - Font Weights

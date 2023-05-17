@@ -2,14 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Davina Leong" />
+    <meta
+      name="description"
+      content="Davina Leong's catalogue of original jokes!"
+    />
+    <meta
+      name="keywords"
+      content="davina leong, catalogue, original jokes, riddles"
+    />
+    <meta name="copyright" content="Davina Leong" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/images/favicon-svg.svg"
+    />
     <title>Laugh and be Blessed</title>
 
     <link rel="stylesheet" href="./src/styles/main.scss" />
     <script defer src="./src/scripts/main.js"></script>
   </head>
-  <body>
-    <h1>Laugh and be Blessed</h1>
+  <body class="text-gray-100 bg-gray-700 p-v-x-400">
+    <header class="text-primary-500 primary-header">
+      <h1 class="fz-xl">Laugh and be Blessed</h1>
+
+      <form action="" method="post" data-element="search-form">
+        <input
+          type="search"
+          name="search"
+          placeholder="Search"
+          id="input-search"
+          class="primary-header__search"
+        />
+      </form>
+    </header>
+    <main></main>
+    <footer class="primary-footer">
+      <p class="text-primary-500 ta-center fz-sm">
+        <em
+          >Laugh and be Blessed &copy; Davina Leong,
+          <span data-element="copyright-year">2023</span></em
+        >
+      </p>
+    </footer>
   </body>
 </html>
