@@ -79,8 +79,8 @@ body,
 .main {
   container-name: main;
   container-type: inline-size;
-  padding-left: var(--size-v-400);
-  padding-right: var(--size-v-400);
+  padding-left: 0;
+  padding-right: 0;
 
   &-flex {
     display: flex;
@@ -123,4 +123,11 @@ body,
 
 img {
   cursor: pointer;
+}
+
+@media screen and (min-width: #{breakpoint("md")}) {
+  .main {
+    padding-left: var(--size-v-400);
+    padding-right: var(--size-v-400);
+  }
 }

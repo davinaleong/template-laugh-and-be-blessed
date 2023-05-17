@@ -7,7 +7,7 @@
 
 .card {
   display: block;
-  min-width: #{breakpoint("sm")};
+  min-width: min(100%, #{breakpoint("sm")});
   padding-top: var(--size-v-400);
   padding-right: var(--size-v-400);
   padding-bottom: var(--size-v-400);
