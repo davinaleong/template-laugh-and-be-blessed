@@ -76,7 +76,6 @@
 
     --btn-tt: normal;
     --btn-fw: normal;
-    --btn-td: underline;
 
     @each $key, $value in $colors {
       &-#{$key} {
