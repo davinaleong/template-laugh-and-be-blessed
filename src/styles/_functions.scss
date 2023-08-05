@@ -39,6 +39,15 @@
   }
 }
 
+@function gradient-direction($gradient-direction) {
+  $value: map-get($gradient-directions, $gradient-direction);
+  @if $value {
+    @return $value;
+  } @else {
+    @error "gradient-direction: #{$gradient-direction} not found.";
+  }
+}
+
 /// Functions - Fonts
 @function font-family($font-family) {
   $value: map-get($font-families, $font-family);
