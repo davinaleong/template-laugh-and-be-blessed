@@ -88,12 +88,17 @@
 }
 
 /// Mixins - Gradients
-@mixin linear-gradient($direction, $start-color, $end-color) {
-  background-image: linear-gradient($direction, $start-color, $end-color);
+@mixin linear-gradient($direction-key, $start-color, $end-color) {
+  $direction: gradient-direction($direction-key);
+  background-image: linear-gradient(
+    unquote($direction),
+    $start-color 30%,
+    $end-color 70%
+  );
 }
 
 @mixin radial-gradient($start-color, $end-color) {
-  background-image: radial-gradient($start-color, $end-color);
+  background-image: radial-gradient($start-color 30%, $end-color 70%);
 }
 
 /// Mixins - Box Shadow

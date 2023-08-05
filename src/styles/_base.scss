@@ -59,7 +59,8 @@ body,
   font-weight: var(--fw-400);
   font-style: var(--fs-normal);
   color: var(--clr-gray-800);
-  background-color: var(--clr-gray-50);
+  background-color: var(--clr-pink-500);
+  @include linear-gradient("br", color("pink", "500"), color("orange", "400"));
   line-height: 1.5;
   position: relative;
 }
