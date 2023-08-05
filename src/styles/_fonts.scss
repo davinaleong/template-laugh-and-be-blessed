@@ -1,15 +1,15 @@
 /// Fonts
 
-/// Fonts - Nunito
+/// Fonts - Inter
 @font-face {
-  font-family: "Nunito";
-  src: url("./../assets/fonts/nunito/Nunito-VariableFont_wght.ttf")
+  font-family: "Inter";
+  src: url("./../assets/fonts/inter/Inter-VariableFont_slntwght.ttf")
     format("truetype");
 }
 
+/// Fonts - Inconsolata
 @font-face {
-  font-family: "Nunito";
-  src: url("./../assets/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf")
+  font-family: "Inconsolata";
+  src: url("./../assets/fonts/inconsolata/Inconsolata-VariableFont_wdthwght.ttf")
     format("truetype");
-  font-style: italic;
 }

@@ -1,88 +1,134 @@
 /// Maps
 
-/// Palatte
-$palatte: (
-  "gray-100": (
-    "hex": #f2f2f2,
-    "rgb": rgb(242, 242, 242),
-    "hsl": hsl(0, 0%, 95%),
-  ),
-  "gray-600": (
-    "hex": #707070,
-    "rgb": rgb(112, 112, 112),
-    "hsl": hsl(0, 0%, 44%),
-  ),
-  "gray-700": (
-    "hex": #404040,
-    "rgb": rgb(64, 64, 64),
-    "hsl": hsl(0, 0%, 25%),
-  ),
-  "primary-300": (
-    "hex": #d4f266,
-    "rgb": rgb(212, 242, 102),
-    "hsl": hsl(73, 84%, 67%),
-  ),
-  "primary-400": (
-    "hex": #a7bf4e,
-    "rgb": rgb(167, 191, 79),
-    "hsl": hsl(73, 47%, 53%),
-  ),
-);
-
 /// Colors
 $colors: (
   "primary": (
-    "50": hsl(73, 88%, 99%),
-    "100": hsl(73, 86%, 96%),
-    "200": hsl(73, 86%, 93%),
-    "300": hsl(73, 84%, 88%),
-    // Primary Light
-    "400": hsl(73, 84%, 67%),
-    // Primary
-    "500": hsl(73, 47%, 53%),
-    "600": hsl(73, 47%, 46%),
-    "700": hsl(73, 45%, 39%),
-    "800": hsl(73, 45%, 26%),
-    "900": hsl(73, 43%, 10%),
+    "50": #e8edf2,
+    "100": #d2dce6,
+    "200": #a4b8cc,
+    "300": #7795b3,
+    "400": #497199,
+    "500": #1c4e80,
+    "600": #163e66,
+    "700": #112f4d,
+    "800": #0b1f33,
+    "900": #06101a,
+  ),
+  "secondary": (
+    "50": #f2f4f5,
+    "100": #e5e9eb,
+    "200": #cbd3d7,
+    "300": #b2bcc2,
+    "400": #98a6ae,
+    "500": #7e909a,
+    "600": #65737b,
+    "700": #4c565c,
+    "800": #323a3e,
+    "900": #191d1f,
+  ),
+  "danger": (
+    "50": #faeaea,
+    "100": #f5d5d5,
+    "200": #ebaaaa,
+    "300": #e08080,
+    "400": #d65555,
+    "500": #cc2b2b,
+    "600": #a32222,
+    "700": #7a1a1a,
+    "800": #521111,
+    "900": #140404,
+  ),
+  "success": (
+    "50": #e8f5e9,
+    "100": #d2ebd3,
+    "200": #a5d6a8,
+    "300": #77c27c,
+    "400": #4aad51,
+    "500": #1d9925,
+    "600": #177a1e,
+    "700": #115c16,
+    "800": #0c3d0f,
+    "900": #061f07,
+  ),
+  "accent-1": (
+    "50": #f7fcfd,
+    "100": #eef9fa,
+    "200": #ddf3f5,
+    "300": #cdecf0,
+    "400": #bce6eb,
+    "500": #abe0e6,
+    "600": #89b3b8,
+    "700": #67868a,
+    "800": #323a3e,
+    "900": #191d1f,
+  ),
+  "accent-2": (
+    "50": #e6f3fa,
+    "100": #cce8f5,
+    "200": #99d1eb,
+    "300": #66b9e0,
+    "400": #33a2d6,
+    "500": #008bcc,
+    "600": #006fa3,
+    "700": #00537a,
+    "800": #003852,
+    "900": #001c29,
+  ),
+  "accent-3": (
+    "50": #fdf0ed,
+    "100": #fae1da,
+    "200": #f5c3b5,
+    "300": #f0a490,
+    "400": #eb866b,
+    "500": #e66846,
+    "600": #b85338,
+    "700": #8a3e2a,
+    "800": #5c2a1c,
+    "900": #2e150e,
   ),
   "gray": (
-    // White
-    "50": hsl(0, 0%, 100%),
-    // Text
-    "100": hsl(0, 0%, 95%),
-    "200": hsl(0, 0%, 93%),
-    "300": hsl(0, 0%, 87%),
-    "400": hsl(0, 0%, 80%),
-    "500": hsl(0, 0%, 60%),
-    // Card Background
-    "600": hsl(0, 0%, 44%),
-    // Background
-    "700": hsl(0, 0%, 38%),
-    "800": hsl(0, 0%, 26%),
-    // Black
-    "900": hsl(0, 0%, 0%),
+    "50": #f1f1f1,
+    "100": #e6e6e6,
+    "200": #cccccc,
+    "300": #b3b3b3,
+    "400": #999999,
+    "500": #808080,
+    "600": #666666,
+    "700": #4d4d4d,
+    "800": #333333,
+    "900": #202020,
   ),
 );
 
 /// Fonts
 /// Fonts - Font Families
 $font-families: (
-  "primary": #{"Nunito",
+  "primary": #{"Inter",
   Arial,
   sans-serif},
+  "secondary": #{"Inconsolata",
+  "Courier New",
+  monospace},
 );
 
 /// Fonts - Font Sizes
 $font-sizes: (
-  "base": 16px,
-  // 14px / 16px
-  "sm": css-clamp("0.875rem, 1rem + 2vw, 1rem"),
-  // 16px / 20px
-  "md": css-clamp("1rem, 1rem + 2vw, 1.25rem"),
-  // 24px / 40px
-  "lg": css-clamp("1.5rem, 1rem + 2vw, 2.5rem"),
-  // 40px / 60px
-  "xl": css-clamp("2.5rem, 1rem + 3vw, 3.75rem"),
+  // Step -2: 12.50px → 10.00px
+  "200": clamp(0.63rem, calc(0.84rem + -0.27vw), 0.78rem),
+  // Step -1: 15.00px → 14.14px
+  "300": clamp(0.88rem, calc(0.96rem + -0.09vw), 0.94rem),
+  // Step 0: 18.00px → 20.00px
+  "400": clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem),
+  // Step 1: 21.60px → 28.28px
+  "500": clamp(1.35rem, calc(1.2rem + 0.73vw), 1.77rem),
+  // Step 2: 25.92px → 39.99px
+  "600": clamp(1.62rem, calc(1.31rem + 1.53vw), 2.5rem),
+  // Step 3: 31.10px → 56.54px
+  "700": clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem),
+  // Step 4: 37.32px → 79.95px
+  "800": clamp(2.33rem, calc(1.41rem + 4.63vw), 5rem),
+  // Step 5: 44.79px → 113.05px
+  "900": clamp(2.8rem, calc(1.32rem + 7.42vw), 7.07rem)
 );
 
 /// Fonts - Font Weights
@@ -162,37 +208,59 @@ $spacer-directions: (
 );
 
 /// Spacers - Fixed Spacer
-$fixed-unit: 1rem;
 $fixed-spacers: (
-  "0": $fixed-unit * 0,
-  "100": $fixed-unit * 0.1,
-  "200": $fixed-unit * 0.25,
-  "300": $fixed-unit * 0.5,
-  "400": $fixed-unit * 1,
-  "500": $fixed-unit * 2,
-  "600": $fixed-unit * 5,
-  "700": $fixed-unit * 8,
-  "800": $fixed-unit * 12,
-  "900": $fixed-unit * 15,
-  "1000": $fixed-unit * 18,
-  "auto": auto,
+  // Space 0: 0
+  "0": 0,
+  // Space 50: 2px → 2px
+  "50": clamp(0.13rem, calc(0.13rem + 0vw), 0.13rem),
+  // Space 100: 5px → 5px
+  "100": clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem),
+  // Space 200: 9px → 10px
+  "200": clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem),
+  // Space 300: 14px → 15px
+  "300": clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem),
+  // Space 400: 18px → 20px
+  "400": clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem),
+  // Space 500: 27px → 30px
+  "500": clamp(1.69rem, calc(1.62rem + 0.33vw), 1.88rem),
+  // Space 600: 36px → 40px
+  "600": clamp(2.25rem, calc(2.16rem + 0.43vw), 2.5rem),
+  // Space 700: 54px → 60px
+  "700": clamp(3.38rem, calc(3.24rem + 0.65vw), 3.75rem),
+  // Space 800: 72px → 80px
+  "800": clamp(4.5rem, calc(4.33rem + 0.87vw), 5rem),
+  // Space 900: 108px → 120px
+  "900": clamp(6.75rem, calc(6.49rem + 1.3vw), 7.5rem),
+  // Space auto: auto
+  "auto": auto
 );
 
 /// Spacers - Variable Spacer
-$variable-unit: 1em;
 $variable-spacers: (
-  "0": $variable-unit * 0,
-  "100": $variable-unit * 0.1,
-  "200": $variable-unit * 0.25,
-  "300": $variable-unit * 0.5,
-  "400": $variable-unit * 1,
-  "500": $variable-unit * 2,
-  "600": $variable-unit * 5,
-  "700": $variable-unit * 8,
-  "800": $variable-unit * 12,
-  "900": $variable-unit * 15,
-  "1000": $variable-unit * 18,
-  "auto": auto,
+  // Space 0: 0
+  "0": 0,
+  // Space 50: 2px → 2px
+  "50": clamp(0.13em, calc(0.13em + 0vw), 0.13em),
+  // Space 100: 5px → 5px
+  "100": clamp(0.31em, calc(0.31em + 0vw), 0.31em),
+  // Space 200: 9px → 10px
+  "200": clamp(0.56em, calc(0.54em + 0.11vw), 0.63em),
+  // Space 300: 14px → 15px
+  "300": clamp(0.88em, calc(0.85em + 0.11vw), 0.94em),
+  // Space 400: 18px → 20px
+  "400": clamp(1.13em, calc(1.08em + 0.22vw), 1.25em),
+  // Space 500: 27px → 30px
+  "500": clamp(1.69em, calc(1.62em + 0.33vw), 1.88em),
+  // Space 600: 36px → 40px
+  "600": clamp(2.25em, calc(2.16em + 0.43vw), 2.5em),
+  // Space 700: 54px → 60px
+  "700": clamp(3.38em, calc(3.24em + 0.65vw), 3.75em),
+  // Space 800: 72px → 80px
+  "800": clamp(4.5em, calc(4.33em + 0.87vw), 5em),
+  // Space 900: 108px → 120px
+  "900": clamp(6.75em, calc(6.49em + 1.3vw), 7.5em),
+  // Space auto: auto
+  "auto": auto
 );
 
 /// Displays
