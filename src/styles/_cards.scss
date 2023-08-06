@@ -11,7 +11,7 @@
 
 /// Cards - Card Element
 .card {
-  --card-width: min(100%, breakpoint("sm"));
+  --card-width: min(100%, 17em);
   --card-padding: var(--size-v-400);
   --card-border-radius: var(--size-v-100);
 
@@ -37,7 +37,7 @@ a.card {
     content: "";
     display: block;
     background-color: var(--clr-gray-50);
-    opacity: 0.7;
+    opacity: 0.3;
     z-index: -1;
     position: absolute;
     top: 0;
