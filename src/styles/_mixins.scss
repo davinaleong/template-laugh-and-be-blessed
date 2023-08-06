@@ -233,3 +233,49 @@
     border-left: $border;
   }
 }
+
+/// Mixins - Positioning
+@mixin positioning($positioning-key, $positioning-value: 0) {
+  $top: auto;
+  $right: auto;
+  $bottom: auto;
+  $left: auto;
+  $translate-x: 0px;
+  $translate-y: 0px;
+
+  @if ($positioning-key == "top") {
+    top: $positioning-value;
+    bottom: auto;
+  }
+
+  @if ($positioning-key == "right") {
+    right: $positioning-value;
+    left: auto;
+  }
+
+  @if ($positioning-key == "bottom") {
+    top: auto;
+    bottom: $positioning-value;
+  }
+
+  @if ($positioning-key == "left") {
+    right: auto;
+    left: $positioning-value;
+  }
+
+  @if ($positioning-key == "center-x") {
+    right: auto;
+    left: 50%;
+    $translate-x: -50%;
+  }
+
+  @if ($positioning-key == "center-y") {
+    top: 50%;
+    bottom: auto;
+    $translate-y: -50%;
+  }
+
+  @if ($positioning-key == "center-x" or $positioning-key == "center-y") {
+    transform: translate($translate-x, $translate-y);
+  }
+}

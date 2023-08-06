@@ -59,7 +59,11 @@ body,
   font-weight: var(--fw-400);
   font-style: var(--fs-normal);
   background-color: var(--clr-pink-500);
-  @include linear-gradient("br", color("pink", "500"), color("orange", "400"));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-pink-500) 30%,
+    var(--clr-orange-400) 70%
+  );
   line-height: 1.5;
   position: relative;
 }

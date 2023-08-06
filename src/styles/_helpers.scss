@@ -295,3 +295,20 @@
     }
   }
 }
+
+/// Helpers - Positions
+@each $key, $value in $positions {
+  .position-#{$key} {
+    position: $value;
+    @if ($key != "static" or $key != "relative") {
+      z-index: 1;
+    }
+  }
+}
+
+/// Helpers - Position Positioning
+@each $key, $value in $position-positionings {
+  .positioning-#{$key} {
+    @include positioning($key);
+  }
+}

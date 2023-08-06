@@ -459,3 +459,23 @@ $border-v-weights: (
   "800": 0.75em,
   "900": 1em,
 );
+
+/// Positions
+/// Positions - Setting
+$positions: (
+  "static": static,
+  "relative": relative,
+  "fixed": fixed,
+  "absolute": absolute,
+  "sticky": sticky,
+);
+
+/// Positions - Positioning
+$position-positionings: (
+  "top": "top",
+  "right": "right",
+  "bottom": "bottom",
+  "left": "left",
+  "center-x": "center-x",
+  "center-y": "center-y",
+);
