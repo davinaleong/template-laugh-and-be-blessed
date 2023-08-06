@@ -13,6 +13,13 @@
   border: 0;
 }
 
+/// Helpers - Backgrounds
+.bg-full {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /// Helpers - Sizing
 .viewport-width {
   max-width: 100vw;
