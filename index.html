@@ -34,7 +34,9 @@
 
       <header class="flow | border-v-b-solid-50-gray-50">
         <h1 class="fz-700">Laugh and be Blessed</h1>
-        <p>Davina Leong's catalogue of jokes, riddles and tongue twisters.</p>
+        <p class="m-v-b-400">
+          Davina Leong's catalogue of jokes, riddles and tongue twisters.
+        </p>
       </header>
 
       <main class="wrapper flow">
@@ -138,7 +140,6 @@
     </div>
 
     <dialog
-      open
       class="dialog | position-fixed positioning-center-x positioning-top text-gray-50 shadow-v-br-400"
       data-element="dialog-catalog"
     >
@@ -150,11 +151,11 @@
           Close
         </button>
 
-        <header class="dialog-header | border-v-b-solid-50-gray-50 p-v-y-400">
-          <h2 class="fz-500">Lorem Ipsum</h2>
+        <header class="dialog__header | border-v-b-solid-50-gray-50 p-v-y-400">
+          <h2 class="dialog__header__heading | fz-500">Lorem Ipsum</h2>
         </header>
 
-        <div class="dialog-body | flow">
+        <div class="dialog__body | flow p-v-t-400" data-element="dialog-body">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
             inventore magni ipsa veritatis dolorem totam vero nulla veniam
