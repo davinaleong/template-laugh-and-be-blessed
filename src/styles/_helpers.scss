@@ -309,6 +309,6 @@
 /// Helpers - Position Positioning
 @each $key, $value in $position-positionings {
   .positioning-#{$key} {
-    @include positioning($key);
+    @include positioning($key, fixed-spacer("400"));
   }
 }

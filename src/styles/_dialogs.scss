@@ -1,7 +1,7 @@
 /// Dialogs
 
 .dialog {
-  --dialog-width: min(100% - (var(--size-v-400) * 2), 20rem);
+  --dialog-width: min(100% - (var(--size-v-400) * 2), 60rem);
   --dialog-height: min(100% - (var(--size-v-400) * 2), 51rem);
   --dialog-padding: var(--size-v-300);
   --dialog-border-radius: var(--size-v-100);

@@ -3,22 +3,20 @@
 /// Buttons - General
 .btn {
   --btn-clr: var(--clr-gray-50);
-  --btn-bg-clr: var(--clr-orange-400);
+  --btn-bg-clr: var(--clr-pink-400);
   --btn-bg-image: linear-gradient(
     to bottom right,
-    var(--clr-orange-400) 30%,
-    var(--clr-pink-500) 70%
+    var(--clr-pink-400) 30%,
+    var(--clr-purple-600) 70%
   );
-  --btn-border-clr: transparent;
 
   --btn-hover-clr: var(--clr-gray-50);
-  --btn-hover-bg-clr: var(--clr-orange-400);
+  --btn-hover-bg-clr: var(--clr-pink-400);
   --btn-hover-bg-image: linear-gradient(
     to bottom right,
-    var(--clr-orange-400) 30%,
-    var(--clr-pink-500) 70%
+    var(--clr-pink-400) 30%,
+    var(--clr-purple-600) 70%
   );
-  --btn-hover-border-clr: var(--clr-gray-800);
 
   --btn-padding: var(--size-v-200) var(--size-v-300);
   --btn-br: var(--size-v-100);
@@ -41,7 +39,7 @@
   fill: var(--btn-clr);
   background-color: var(--btn-bg-clr);
   background-image: var(--btn-bg-image);
-  border: thin solid var(--btn-border-clr);
+  border: none;
   border-radius: var(--btn-br);
   text-decoration: var(--btn-td);
   font-family: var(--btn-ff);
@@ -57,9 +55,14 @@
   }
 }
 
+a.btn {
+  --a-td: none;
+  --a-hover-td: none;
+}
+
 .btn:hover {
   color: var(--btn-hover-clr);
-  border: thin solid var(--btn-hover-border-clr);
+  border: none;
   background-color: var(--btn-hover-bg-clr);
   background-image: var(--btn-hover-bg-image);
 }
@@ -103,6 +106,8 @@
 
 /// Buttons - Animated Slide Left
 .btn-slide {
+  overflow: hidden;
+
   &::before {
     content: "";
     display: block;
