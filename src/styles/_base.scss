@@ -41,6 +41,10 @@
   @each $key, $value in $breakpoints {
     --bp-#{$key}: #{$value};
   }
+
+  --wrapper-width: 1200px;
+  --main-footer-height: 2.75em;
+  --section-header-height: 6.938em;
 }
 
 /// Base - HTML & Body
@@ -51,9 +55,15 @@ html {
 body,
 .body {
   font-family: var(--ff-primary);
-  font-size: var(--fz-md);
+  font-size: var(--fz-400);
   font-weight: var(--fw-400);
   font-style: var(--fs-normal);
+  background-color: var(--clr-pink-500);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-pink-500) 30%,
+    var(--clr-orange-400) 70%
+  );
   line-height: 1.5;
   position: relative;
 }
@@ -72,16 +82,11 @@ body,
 }
 
 :focus {
-  outline: 3px solid var(--clr-secondary-400);
+  outline: 3px solid var(--clr-accent-3-400);
 }
 
 /// Base - Main
 .main {
-  container-name: main;
-  container-type: inline-size;
-  padding-left: 0;
-  padding-right: 0;
-
   &-flex {
     display: flex;
     align-items: center;
@@ -95,39 +100,64 @@ body,
 }
 
 /// Base - Containers
-.container-fluid {
-  --container-padding-inline: var(--size-v-400);
+.wrapper-fluid {
+  --wrapper-padding-inline: var(--size-v-400);
 
-  container-name: containerFluid;
-  container-type: inline-size;
-  padding-inline: var(--container-padding-inline);
+  padding-inline: var(--wrapper-padding-inline);
   margin-inline: auto;
   position: relative;
+}
+
+.wrapper {
+  --wrapper-gutter: var(--size-v-400);
+  --wrapper-width: #{breakpoint("xxl")};
+
+  width: min(100% - var(--wrapper-gutter), var(--wrapper-width));
+  position: relative;
+
+  &-aligned-center {
+    margin-inline: auto;
+  }
+
+  &-no-gutter {
+    --wrapper-gutter: var(--size-v-0);
+  }
 }
 
 .container {
-  --container-padding-inline: var(--size-v-400);
-  --container-width: #{breakpoint("lg")};
-
   container-name: container;
   container-type: inline-size;
-  padding-inline: var(--container-padding-inline);
-  margin-inline: auto;
-  width: css-min("100%, var(--container-width)");
-  position: relative;
 }
 
-.container-no-padding {
-  --container-padding-inline: var(--size-v-0);
+.flow > * + * {
+  --flow-spacer: var(--size-f-400);
+
+  margin-top: var(--flow-spacer);
 }
 
 img {
   cursor: pointer;
 }
 
-@media screen and (min-width: #{breakpoint("md")}) {
-  .main {
-    padding-left: var(--size-v-400);
-    padding-right: var(--size-v-400);
+.main-content-wrapper {
+  & > *:first-child {
+    min-height: calc(100% - var(--main-footer-height));
+  }
+}
+
+.layout-grid {
+  --layout-grid-gap: var(--size-v-400);
+
+  display: block;
+}
+
+@media screen and (min-width: #{breakpoint('lg')}) {
+  .layout-grid {
+    display: grid;
+    gap: var(--layout-grid-gap);
+
+    &-dashboard {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
